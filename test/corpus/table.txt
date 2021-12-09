@@ -1,0 +1,68 @@
+==================
+include rule
+==================
+
+include foo.ctb
+
+---
+
+(source_file
+  (include
+    (filename)))
+
+==================
+undefined rule
+==================
+
+undefined 123
+
+---
+
+(source_file
+  (undefined
+    (dots_with_zero
+      (dot_with_zero))))
+
+==================
+display rule
+==================
+
+display a 1
+
+---
+
+(source_file
+  (display
+    (chars)
+    (dots_with_zero
+      (dot_with_zero))))
+
+==================
+display rule 2
+==================
+
+display a 123
+
+---
+
+(source_file
+  (display
+    (chars)
+    (dots_with_zero
+      (dot_with_zero))))
+
+==================
+display rule 3
+==================
+
+display a 123-0
+
+---
+
+(source_file
+  (display
+    (chars)
+    (dots_with_zero
+      (dot_with_zero)
+      (dot_with_zero))))
+

@@ -1,0 +1,42 @@
+==================
+letter with dots with zero
+==================
+
+letter a 0
+
+---
+
+(source_file
+  (letter
+    (chars)
+    (dots_with_zero
+      (dot_with_zero))))
+
+==================
+letter with dots with zero
+==================
+
+letter a 123-0-12
+
+---
+
+(source_file
+  (letter
+    (chars)
+      (dots_with_zero
+        (dot_with_zero)
+        (dot_with_zero)
+        (dot_with_zero))))
+
+==================
+letter with =
+==================
+
+letter a =
+
+---
+
+(source_file
+  (letter
+    (chars)
+    (equal)))
