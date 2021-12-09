@@ -91,6 +91,18 @@ module.exports = grammar({
 	    $.midendword,
 	    $.endword,
 	    $.partword,
+
+	    // Computer braille
+	    $.begcomp,
+	    $.endcomp,
+
+	    // Character-Class Opcodes
+	    $.attribute,
+
+    	    // Swap Opcodes
+	    $.swapcd,
+	    $.swapdd,
+	    $.swapcc,
 ),
 
 	include: $ => seq('include', $._sp, $.filename),
@@ -159,6 +171,15 @@ module.exports = grammar({
 	endword: $ => seq(optional($._prefix), repeat($.with_class), 'endword', $._sp, $.chars, $._sp, $.dots_with_zero_or_equal),
 	partword: $ => seq(optional($._prefix), repeat($.with_class), 'partword', $._sp, $.chars, $._sp, $.dots),
 
+	begcomp: $ => seq(optional($._prefix), 'begcomp', $._sp, $.dots),
+	endcomp: $ => seq(optional($._prefix), 'endcomp', $._sp, $.dots),
+
+	attribute: $ => seq('attribute', $._sp, choice($.ascii_chars, $.oct_digit), $._sp, $.chars),
+
+	swapcd: $ => seq('swapcd', $._sp, $.ascii_chars, $._sp, $.chars, $._sp, $.dots, repeat(seq(',', $.dots))),
+	swapdd: $ => seq('swapdd', $._sp, $.ascii_chars, $._sp, $.dots, repeat(seq(',', $.dots))),
+	swapcc: $ => seq('swapcc', $._sp, $.ascii_chars, $._sp, $.chars, $._sp, $.chars),
+
 	before: $ => 'before',
 	after: $ => 'after',
 	noback: $ => 'noback',
@@ -197,8 +218,9 @@ module.exports = grammar({
 	_sp: $ => /[ \t]+/,
 	_sp_maybe: $ => /[ \t]*/,
 
-	ascii_digit: $ => /[0-9]/
-    },
+	ascii_digit: $ => /[0-9]/,
+	oct_digit: $ => /[0-7]/
+   },
     extras: $ => [],
     inline: $ => [$.dots_or_equal, $.dots_with_zero_or_equal]
 });

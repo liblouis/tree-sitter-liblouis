@@ -1,0 +1,48 @@
+==================
+swapcd
+==================
+
+swapcd dropped 0123456789 356,2,23
+
+---
+
+(source_file
+  (swapcd
+    (ascii_chars)
+    (chars)
+    (dots)
+    (dots)
+    (dots)))
+
+==================
+swapdd
+==================
+
+swapdd cancelcontraction 2a,23a,25a,256a,26a,35a
+
+---
+
+(source_file
+  (swapdd
+    (ascii_chars)
+    (dots)
+    (dots)
+    (dots)
+    (dots)
+    (dots)
+    (dots)))
+
+==================
+swapcc
+==================
+
+swapcc UpperLower ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
+
+---
+
+(source_file
+  (swapcc
+    (ascii_chars)
+    (chars)
+    (chars)))
+
