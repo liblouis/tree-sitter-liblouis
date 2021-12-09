@@ -30,6 +30,11 @@ module.exports = grammar({
 	    $.digit,
 	    $.grouping,
 	    $.letter,
+	    $.lowercase,
+	    $.uppercase,
+	    $.litdigit,
+	    $.sign,
+	    $.math,
 	),
 
 	include: $ => seq('include', $._sp, $.filename),
@@ -42,6 +47,11 @@ module.exports = grammar({
 	digit: $ => seq('digit', $._sp, $.chars, $._sp, $.dots),
 	grouping: $ => seq('grouping', $._sp, $.name, $._sp, $.chars, $._sp, $.dots, ',', $.dots),
 	letter: $ => seq('letter', $._sp, $.chars, $._sp, $._dots_with_zero_or_equal),
+	lowercase: $ => seq(optional($._prefix), 'lowercase', $._sp, $.chars, $._sp, $.dots),
+	uppercase: $ => seq(optional($._prefix), 'uppercase', $._sp, $.chars, $._sp, $.dots),
+	litdigit: $ => seq('litdigit', $._sp, $.chars, $._sp, $.dots),
+	sign: $ => seq(optional($._prefix), 'sign', $._sp, $.chars, $._sp, $.dots_with_zero),
+	math: $ => seq(optional($._prefix), 'math', $._sp, $.chars, $._sp, $.dots_with_zero),
 
 	noback: $ => 'noback',
 	nofor: $ => 'nofor',

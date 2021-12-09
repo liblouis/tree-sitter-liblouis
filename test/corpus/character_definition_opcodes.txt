@@ -1,0 +1,197 @@
+==================
+space
+==================
+
+space _ 0
+
+---
+
+(source_file
+  (space
+    (chars)
+    (dots_with_zero)))
+
+==================
+space with noback
+==================
+
+noback space _ 23-0-12
+
+---
+
+(source_file
+  (space
+    (noback)
+    (chars)
+    (dots_with_zero)))
+
+==================
+space with noback and nocross
+==================
+
+noback nocross space _ 23-0-12
+
+---
+
+(source_file
+  (space
+    (noback)
+    (nocross)
+    (chars)
+    (dots_with_zero)))
+
+==================
+punctuation
+==================
+
+punctuation . 46
+
+---
+
+(source_file
+  (punctuation
+    (chars)
+    (dots_with_zero)))
+
+==================
+punctuation with endcomment
+==================
+
+punctuation . 46 dot pattern for period in NAB computer braille
+
+---
+
+(source_file
+  (punctuation
+    (chars)
+    (dots_with_zero))
+  (end_comment))
+
+==================
+digit
+==================
+
+digit 0 356
+
+---
+
+(source_file
+  (digit
+    (chars)
+    (dots)))
+
+==================
+digit with endcomment
+==================
+
+digit 0 356 NAB computer braille
+
+---
+
+(source_file
+  (digit
+    (chars)
+    (dots))
+  (end_comment))
+
+==================
+grouping
+==================
+
+grouping mrow ab 1e,2e
+
+---
+
+(source_file
+  (grouping
+    (name)
+    (chars)
+    (dots)
+    (dots)))
+
+==================
+grouping
+==================
+
+grouping mfrac cd 3e,4e
+
+---
+
+(source_file
+  (grouping
+    (name)
+    (chars)
+    (dots)
+    (dots)))
+
+==================
+lowercase
+==================
+
+lowercase a 1
+
+---
+
+(source_file
+  (lowercase
+    (chars)
+    (dots)))
+
+==================
+uppercase
+==================
+
+uppercase A 1
+
+---
+
+(source_file
+  (uppercase
+    (chars)
+    (dots)))
+
+==================
+litdigit
+==================
+
+litdigit 0 245
+litdigit 1 1
+
+---
+
+(source_file
+  (litdigit
+    (chars)
+    (dots))
+  (litdigit
+    (chars)
+    (dots)))
+
+==================
+sign
+==================
+
+sign % 4-25-1234 literary percent sign
+
+---
+
+(source_file
+  (sign
+    (chars)
+    (dots_with_zero))
+  (end_comment))
+
+==================
+math
+==================
+
+math + 346 plus
+
+---
+
+(source_file
+  (math
+    (chars)
+    (dots_with_zero))
+  (end_comment))
+
