@@ -36,11 +36,9 @@ module.exports = grammar({
 	    $.dots_with_zero
 	),
 	equal: $ => '=',
-	dots_with_zero: $ => seq(
-	    $.dot_with_zero,
-	    repeat(seq('-', $.dot_with_zero))
-	),
-	dot_with_zero: $ => /[0-9a-f]+/,
+
+	dots_with_zero: $ => /[0-9a-f]+(-[0-9a-f]+)*/,
+	dots: $ => /[1-9a-f]+(-[1-9a-f]+)*/,
 
 	esc_seq: $ => choice('\\\\', '\\f', '\\n', '\\r', '\\s', '\\t', '\\v', '\\e'),
 	chars: $ => choice($.esc_seq, /[^ \t\n]+/),
