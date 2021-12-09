@@ -99,10 +99,19 @@ module.exports = grammar({
 	    // Character-Class Opcodes
 	    $.attribute,
 
-    	    // Swap Opcodes
+	    // Swap Opcodes
 	    $.swapcd,
 	    $.swapdd,
 	    $.swapcc,
+
+	    // Context and Multipass Opcodes
+	    $.context,
+	    $.pass2,
+	    $.pass3,
+	    $.pass4,
+
+	    // correct Opcode
+	    $.correct,
 ),
 
 	include: $ => seq('include', $._sp, $.filename),
@@ -179,6 +188,19 @@ module.exports = grammar({
 	swapcd: $ => seq('swapcd', $._sp, $.ascii_chars, $._sp, $.chars, $._sp, $.dots, repeat(seq(',', $.dots))),
 	swapdd: $ => seq('swapdd', $._sp, $.ascii_chars, $._sp, $.dots, repeat(seq(',', $.dots))),
 	swapcc: $ => seq('swapcc', $._sp, $.ascii_chars, $._sp, $.chars, $._sp, $.chars),
+
+	context: $ => seq(optional($._prefix), 'context', $._sp, $.multipass_test, $._sp, $.multipass_action),
+	pass2: $ => seq(optional($._prefix), 'pass2', $._sp, $.multipass_test, $._sp, $.multipass_action),
+	pass3: $ => seq(optional($._prefix), 'pass3', $._sp, $.multipass_test, $._sp, $.multipass_action),
+	pass4: $ => seq(optional($._prefix), 'pass4', $._sp, $.multipass_test, $._sp, $.multipass_action),
+
+	correct: $ => seq(optional($._prefix), 'correct', $._sp, $.multipass_test, $._sp, $.multipass_action),
+
+	multipass_test: $ => /[^ \t\n]+/,
+	multipass_action: $ => /[^ \t\n]+/,
+
+	// multipass_test: $ => /[a-zA-Z0-9\"@`~$!%{}\/_#*\[\]]+/,
+	// multipass_action: $ => /[a-zA-Z0-9\"@`~$!%{}\/_#*\[\]?]+/,
 
 	before: $ => 'before',
 	after: $ => 'after',

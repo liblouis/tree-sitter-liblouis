@@ -1,0 +1,30 @@
+==================
+correct
+==================
+
+noback correct "\\" ? Eliminate backslashes
+
+---
+
+(source_file
+  (correct
+    (noback)
+    (multipass_test)
+    (multipass_action))
+  (end_comment))
+
+==================
+correct
+==================
+
+noback correct "cornf" "comf" fix a common "scano"
+
+---
+
+(source_file
+  (correct
+    (noback)
+    (multipass_test)
+    (multipass_action))
+  (end_comment))
+

@@ -1,0 +1,58 @@
+==================
+context
+==================
+
+noback context _$l["."]$l @256 U.S.
+
+---
+
+(source_file
+  (context
+    (noback)
+    (multipass_test)
+    (multipass_action))
+  (end_comment))
+
+==================
+pass2
+==================
+
+noback pass2 @6-56 @56-6
+
+---
+
+(source_file
+  (pass2
+    (noback)
+    (multipass_test)
+    (multipass_action)))
+
+==================
+pass3
+==================
+
+noback pass3 @36a @36
+
+---
+
+(source_file
+  (pass3
+    (noback)
+    (multipass_test)
+    (multipass_action)))
+
+==================
+pass4
+==================
+
+noback pass4 [@1F] @1 # a
+
+---
+
+(source_file
+  (pass4
+    (noback)
+    (multipass_test)
+    (multipass_action))
+  (end_comment))
+
