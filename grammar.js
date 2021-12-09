@@ -94,7 +94,7 @@ module.exports = grammar({
 	punctuation: $ => seq(optional($._prefix), 'punctuation', $._sp, $.chars, $._sp, $.dots_with_zero),
 	digit: $ => seq('digit', $._sp, $.chars, $._sp, $.dots),
 	grouping: $ => seq('grouping', $._sp, $.name, $._sp, $.chars, $._sp, $.dots, ',', $.dots),
-	letter: $ => seq('letter', $._sp, $.chars, $._sp, $._dots_with_zero_or_equal),
+	letter: $ => seq('letter', $._sp, $.chars, $._sp, $.dots_with_zero_or_equal),
 	lowercase: $ => seq(optional($._prefix), 'lowercase', $._sp, $.chars, $._sp, $.dots),
 	uppercase: $ => seq(optional($._prefix), 'uppercase', $._sp, $.chars, $._sp, $.dots),
 	litdigit: $ => seq('litdigit', $._sp, $.chars, $._sp, $.dots),
@@ -191,5 +191,6 @@ module.exports = grammar({
 
 	ascii_digit: $ => /[0-9]/
     },
-    extras: $ => []
+    extras: $ => [],
+    inline: $ => [$.dots_or_equal, $.dots_with_zero_or_equal]
 });
