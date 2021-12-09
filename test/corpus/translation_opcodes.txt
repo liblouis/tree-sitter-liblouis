@@ -1,0 +1,346 @@
+==================
+compbrl
+==================
+
+compbrl www translate URLs in computer braille
+
+---
+
+(source_file
+  (compbrl
+    (chars))
+  (end_comment))
+
+==================
+comp6
+==================
+
+comp6 a 19
+
+---
+
+(source_file
+  (comp6
+    (chars)
+    (dots)))
+
+==================
+nocont
+==================
+
+nocont dupont
+
+---
+
+(source_file
+  (nocont
+    (chars)))
+
+==================
+replace
+==================
+
+replace blisful blissful
+---
+
+(source_file
+  (replace
+    (chars)
+    (chars)))
+
+==================
+replace with one operand
+==================
+
+replace ~
+---
+
+(source_file
+  (replace
+   (chars)))
+
+==================
+always
+==================
+
+always world 456-2456 unconditional translation
+
+---
+
+(source_file
+  (always
+    (chars)
+    (dots_with_zero))
+  (end_comment))
+
+==================
+repeated
+==================
+
+repeated --- 36-36-36 shorten separator lines made with hyphens
+
+---
+
+(source_file
+  (repeated
+    (chars)
+    (dots_with_zero))
+  (end_comment))
+
+==================
+repword
+==================
+
+repword - 123456
+
+---
+
+(source_file
+  (repword
+    (chars)
+    (dots)))
+
+==================
+rependword
+==================
+
+rependword - 25,123456
+
+---
+
+(source_file
+  (rependword
+    (chars)
+    (dots)
+    (dots)))
+
+==================
+largesign
+==================
+
+largesign and 12346
+
+---
+
+(source_file
+  (largesign
+    (chars)
+    (dots)))
+
+==================
+word
+==================
+
+word against 1-1245-34
+
+---
+
+(source_file
+  (word
+    (chars)
+    (dots)))
+
+==================
+syllable
+==================
+
+syllable horse = sawhorse, horseradish
+
+---
+
+(source_file
+  (syllable
+    (chars)
+    (equal))
+  (end_comment))
+
+==================
+joinword
+==================
+
+joinword to 235
+
+---
+
+(source_file
+  (joinword
+    (chars)
+    (dots)))
+
+==================
+lowword
+==================
+
+lowword were 2356
+
+---
+
+(source_file
+  (lowword
+    (chars)
+    (dots)))
+
+==================
+contraction
+==================
+
+contraction alt
+
+---
+
+(source_file
+  (contraction
+    (chars)))
+
+==================
+sufword
+==================
+
+sufword being 23-346
+
+
+---
+
+(source_file
+  (sufword
+    (chars)
+    (dots)))
+
+==================
+prfword
+==================
+
+prfword children 16-1345
+
+---
+
+(source_file
+  (prfword
+    (chars)
+    (dots)))
+
+==================
+begword
+==================
+
+begword dino 145-35-135 dinoflagellate
+
+---
+
+(source_file
+  (begword
+    (chars)
+    (dots_with_zero))
+  (end_comment))
+
+==================
+begword with equal
+==================
+
+begword deact = deactivation
+
+---
+
+(source_file
+  (begword
+    (chars)
+    (equal))
+  (end_comment))
+
+==================
+begmidword
+==================
+
+begmidword lahung 123-1-125-136-346
+
+---
+
+(source_file
+  (begmidword
+    (chars)
+    (dots)))
+
+==================
+midword
+==================
+
+midword ea 2
+
+---
+
+(source_file
+  (midword
+    (chars)
+    (dots_with_zero)))
+
+==================
+midendword
+==================
+
+midendword eager 2-1245-12456 meager
+
+---
+
+(source_file
+  (midendword
+    (chars)
+    (dots))
+  (end_comment))
+
+==================
+midendword with equal
+==================
+
+midendword eage = mileage
+
+
+---
+
+(source_file
+  (midendword
+    (chars)
+    (equal))
+  (end_comment))
+
+==================
+endword
+==================
+
+endword in' 35-3
+
+---
+
+(source_file
+  (endword
+    (chars)
+    (dots_with_zero)))
+
+==================
+endword with equal
+==================
+
+endword eably = noticeably
+
+---
+
+(source_file
+  (endword
+    (chars)
+    (equal))
+  (end_comment))
+
+
+==================
+partword
+==================
+
+partword st 34
+
+---
+
+(source_file
+  (partword
+    (chars)
+    (dots)))
+
+

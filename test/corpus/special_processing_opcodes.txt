@@ -1,0 +1,35 @@
+==================
+capsnocont
+==================
+
+capsnocont
+
+---
+
+(source_file
+  (capsnocont))
+
+==================
+capsnocont with comment
+==================
+
+capsnocont this is a lame comment
+
+---
+
+(source_file
+  (capsnocont)
+  (end_comment))
+
+==================
+capsnocont with comment
+==================
+
+capsnocont # this is a lame comment
+
+---
+
+(source_file
+  (capsnocont)
+  (end_comment))
+

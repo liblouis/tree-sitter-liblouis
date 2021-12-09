@@ -1,0 +1,26 @@
+==================
+decpoint
+==================
+
+decpoint . 46
+
+---
+
+(source_file
+  (decpoint
+    (chars)
+    (dots)))
+
+==================
+hyphen
+==================
+
+hyphen - 45
+
+---
+
+(source_file
+  (hyphen
+    (chars)
+    (dots)))
+
