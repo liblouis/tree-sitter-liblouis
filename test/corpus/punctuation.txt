@@ -1,0 +1,27 @@
+==================
+punctuation
+==================
+
+punctuation . 46
+
+---
+
+(source_file
+  (punctuation
+    (chars)
+    (dots_with_zero)))
+
+==================
+punctuation with endcomment
+==================
+
+punctuation . 46 dot pattern for period in NAB computer braille
+
+---
+
+(source_file
+  (punctuation
+    (chars)
+    (dots_with_zero))
+  (end_comment))
+

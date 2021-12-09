@@ -26,6 +26,8 @@ module.exports = grammar({
 	    $.multind,
 
 	    $.space,
+	    $.punctuation,
+	    $.digit,
 	    $.letter,
 	),
 
@@ -35,6 +37,8 @@ module.exports = grammar({
 	multind: $ => seq(optional($._prefix), 'multind', $._sp, $.dots, $._sp, $.chars),
 
 	space: $ => seq(optional($._prefix), 'space', $._sp, $.chars, $._sp, $.dots_with_zero),
+	punctuation: $ => seq(optional($._prefix), 'punctuation', $._sp, $.chars, $._sp, $.dots_with_zero),
+	digit: $ => seq('digit', $._sp, $.chars, $._sp, $.dots),
 	letter: $ => seq('letter', $._sp, $.chars, $._sp, $._dots_with_zero_or_equal),
 
 	noback: $ => 'noback',

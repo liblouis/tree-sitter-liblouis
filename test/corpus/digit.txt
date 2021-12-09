@@ -1,0 +1,27 @@
+==================
+digit
+==================
+
+digit 0 356
+
+---
+
+(source_file
+  (digit
+    (chars)
+    (dots)))
+
+==================
+digit with endcomment
+==================
+
+digit 0 356 NAB computer braille
+
+---
+
+(source_file
+  (digit
+    (chars)
+    (dots))
+  (end_comment))
+
