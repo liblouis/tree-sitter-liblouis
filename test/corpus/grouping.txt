@@ -1,0 +1,30 @@
+==================
+grouping
+==================
+
+grouping mrow ab 1e,2e
+
+---
+
+(source_file
+  (grouping
+    (name)
+    (chars)
+    (dots)
+    (dots)))
+
+==================
+grouping
+==================
+
+grouping mfrac cd 3e,4e
+
+---
+
+(source_file
+  (grouping
+    (name)
+    (chars)
+    (dots)
+    (dots)))
+

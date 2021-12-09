@@ -28,6 +28,7 @@ module.exports = grammar({
 	    $.space,
 	    $.punctuation,
 	    $.digit,
+	    $.grouping,
 	    $.letter,
 	),
 
@@ -39,6 +40,7 @@ module.exports = grammar({
 	space: $ => seq(optional($._prefix), 'space', $._sp, $.chars, $._sp, $.dots_with_zero),
 	punctuation: $ => seq(optional($._prefix), 'punctuation', $._sp, $.chars, $._sp, $.dots_with_zero),
 	digit: $ => seq('digit', $._sp, $.chars, $._sp, $.dots),
+	grouping: $ => seq('grouping', $._sp, $.name, $._sp, $.chars, $._sp, $.dots, ',', $.dots),
 	letter: $ => seq('letter', $._sp, $.chars, $._sp, $._dots_with_zero_or_equal),
 
 	noback: $ => 'noback',
@@ -59,6 +61,7 @@ module.exports = grammar({
 	),
 	equal: $ => '=',
 
+	name: $ => /[a-zA-Z]+/,
 	dots_with_zero: $ => /[0-9a-f]+(-[0-9a-f]+)*/,
 	dots: $ => /[1-9a-f]+(-[1-9a-f]+)*/,
 
