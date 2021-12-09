@@ -112,6 +112,9 @@ module.exports = grammar({
 
 	    // correct Opcode
 	    $.correct,
+	    // match Opcode
+	    $.match,
+	    $.literal
 ),
 
 	include: $ => seq('include', $._sp, $.filename),
@@ -201,6 +204,24 @@ module.exports = grammar({
 
 	// multipass_test: $ => /[a-zA-Z0-9\"@`~$!%{}\/_#*\[\]]+/,
 	// multipass_action: $ => /[a-zA-Z0-9\"@`~$!%{}\/_#*\[\]?]+/,
+
+	match: $ => seq(optional($._prefix),
+			repeat($.with_class),
+			optional($.with_match),
+			'match', $._sp, $.pre_pattern, $._sp, $.chars, $._sp, $.post_pattern, $._sp, $.dots),
+	with_match: $ => seq(
+	    choice(
+		'empmatchbefore',
+		'empmatchafter',
+		seq('empmatchbefore', $._sp, 'empmatchafter'),
+		seq('empmatchafter', $._sp, 'empmatchbefore')
+	    ),
+	    $._sp
+	),
+	pre_pattern: $ =>  /[^ \t\n]+/,
+	post_pattern: $ => /[^ \t\n]+/,
+
+	literal: $ => seq('literal', $._sp, $.chars),
 
 	before: $ => 'before',
 	after: $ => 'after',

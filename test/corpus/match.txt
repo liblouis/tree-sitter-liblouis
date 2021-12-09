@@ -1,0 +1,60 @@
+==================
+match
+==================
+
+match ab xyz cd 1346-13456-1356
+
+---
+
+(source_file
+  (match
+    (pre_pattern)
+    (chars)
+    (post_pattern)
+    (dots)))
+
+==================
+match
+==================
+
+match ^ ONE : 3456-1
+
+---
+
+(source_file
+  (match
+    (pre_pattern)
+    (chars)
+    (post_pattern)
+    (dots)))
+
+==================
+match
+==================
+
+match !%[^_] ing - 346
+
+---
+
+(source_file
+  (match
+    (pre_pattern)
+    (chars)
+    (post_pattern)
+    (dots)))
+
+==================
+match
+==================
+
+match %[^_] con c!h 25
+
+---
+
+(source_file
+  (match
+    (pre_pattern)
+    (chars)
+    (post_pattern)
+    (dots)))
+
