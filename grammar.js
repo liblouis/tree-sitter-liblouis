@@ -23,13 +23,31 @@ module.exports = grammar({
 	    $.include,
 	    $.undefined,
 	    $.display,
+	    $.multind,
+
+	    $.space,
 	    $.letter,
 	),
 
 	include: $ => seq('include', $._sp, $.filename),
 	undefined: $ => seq('undefined', $._sp, $.dots_with_zero),
 	display: $ => seq('display', $._sp, $.chars, $._sp, $.dots_with_zero),
+	multind: $ => seq(optional($._prefix), 'multind', $._sp, $.dots, $._sp, $.chars),
+
+	space: $ => seq(optional($._prefix), 'space', $._sp, $.chars, $._sp, $.dots_with_zero),
 	letter: $ => seq('letter', $._sp, $.chars, $._sp, $._dots_with_zero_or_equal),
+
+	noback: $ => 'noback',
+	nofor: $ => 'nofor',
+	nocross: $ => 'nocross',
+	_prefix: $ => seq(
+	    choice(
+		seq(
+		    choice($.noback, $.nofor),
+		    optional(seq($._sp, $.nocross))),
+		$.nocross),
+	    $._sp
+	),
 
 	_dots_with_zero_or_equal: $ => choice(
 	    $.equal,

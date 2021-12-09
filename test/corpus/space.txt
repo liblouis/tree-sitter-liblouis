@@ -1,0 +1,42 @@
+==================
+space
+==================
+
+space _ 0
+
+---
+
+(source_file
+  (space
+    (chars)
+    (dots_with_zero)))
+
+==================
+space with noback
+==================
+
+noback space _ 23-0-12
+
+---
+
+(source_file
+  (space
+    (noback)
+    (chars)
+    (dots_with_zero)))
+
+==================
+space with noback and nocross
+==================
+
+noback nocross space _ 23-0-12
+
+---
+
+(source_file
+  (space
+    (noback)
+    (nocross)
+    (chars)
+    (dots_with_zero)))
+
