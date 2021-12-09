@@ -20,11 +20,13 @@ module.exports = grammar({
 	    choice($.end_comment, $._sp_maybe)
 	),
 	_rule: $ => choice(
+	    // Miscellaneous Opcodes
 	    $.include,
 	    $.undefined,
 	    $.display,
 	    $.multind,
 
+	    // Character-Definition Opcodes
 	    $.space,
 	    $.punctuation,
 	    $.digit,
@@ -36,6 +38,11 @@ module.exports = grammar({
 	    $.sign,
 	    $.math,
 
+	    // Braille Indicator Opcodes
+
+	    // Emphasis Opcodes
+
+	    // Braille Indicator Opcodes
 	    $.capsletter,
 	    $.begcapsword,
 	    $.endcapsword,
@@ -58,6 +65,7 @@ module.exports = grammar({
 	    $.decpoint,
 	    $.hyphen, // FIXME: Does hyphen really need a nofor prefix?
 
+	    // Special Processing Opcodes
 	    $.capsnocont,
 
 	    // Translation Opcodes
