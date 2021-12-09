@@ -1,0 +1,181 @@
+==================
+capsletter
+==================
+
+capsletter 6
+
+---
+
+(source_file
+  (capsletter
+    (dots)))
+
+==================
+begcapsword
+==================
+
+begcapsword 6-6
+
+---
+
+(source_file
+  (begcapsword
+    (dots)))
+
+==================
+endcapsword
+==================
+
+endcapsword 6-3
+
+---
+
+(source_file
+  (endcapsword
+    (dots)))
+
+==================
+capsmodechars
+==================
+
+capsmodechars -
+
+---
+
+(source_file
+  (capsmodechars
+    (chars)))
+
+==================
+begcaps
+==================
+
+begcaps 6-6-6
+
+---
+
+(source_file
+  (begcaps
+    (dots)))
+
+==================
+endcaps
+==================
+
+endcaps 6-3
+
+---
+
+(source_file
+  (endcaps
+    (dots)))
+
+==================
+letsign
+==================
+
+letsign 56
+
+---
+
+(source_file
+  (letsign
+    (dots)))
+
+==================
+noletsign
+==================
+
+noletsign abc
+
+---
+
+(source_file
+  (noletsign
+    (chars)))
+
+==================
+noletsignbefore
+==================
+
+noletsignbefore abc
+
+---
+
+(source_file
+  (noletsignbefore
+    (chars)))
+
+
+==================
+noletsignafter
+==================
+
+noletsignafter abc
+
+---
+
+(source_file
+  (noletsignafter
+    (chars)))
+
+==================
+nocontractsign
+==================
+
+nocontractsign 123
+
+---
+
+(source_file
+  (nocontractsign
+    (dots)))
+
+==================
+numsign
+==================
+
+numsign 3456
+
+---
+
+(source_file
+  (numsign
+    (dots)))
+
+==================
+numericnocontchars
+==================
+
+numericnocontchars abcdefghij
+
+---
+
+(source_file
+  (numericnocontchars
+    (chars)))
+
+==================
+numericmodechars
+==================
+
+numericmodechars .,
+
+---
+
+(source_file
+  (numericmodechars
+    (chars)))
+
+==================
+midendnumericmodechars
+==================
+
+midendnumericmodechars -/
+
+---
+
+(source_file
+  (midendnumericmodechars
+    (chars)))
+
