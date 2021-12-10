@@ -329,7 +329,6 @@ endword eably = noticeably
     (equal))
   (end_comment))
 
-
 ==================
 partword
 ==================
@@ -343,4 +342,81 @@ partword st 34
     (chars)
     (dots)))
 
+==================
+prepunc
+==================
 
+prepunc ( 2356
+
+---
+
+(source_file
+  (prepunc
+    (chars)
+    (dots)))
+
+==================
+postpunc
+==================
+
+postpunc ! 235
+
+---
+
+(source_file
+  (postpunc
+    (chars)
+    (dots)))
+
+==================
+begnum
+==================
+
+begnum $ 256-3456
+
+---
+
+(source_file
+  (begnum
+    (chars)
+    (dots_with_zero)))
+
+==================
+midnum
+==================
+
+midnum - 36
+
+---
+
+(source_file
+  (midnum
+    (chars)
+    (dots_with_zero)))
+
+==================
+endnum
+==================
+
+endnum nd 1345-145
+
+---
+
+(source_file
+  (endnum
+    (chars)
+    (dots_with_zero)))
+
+==================
+joinnum
+==================
+
+joinnum \x20AC 15 (EURO SIGN)
+
+---
+
+(source_file
+  (joinnum
+    (chars)
+    (dots))
+  (end_comment))

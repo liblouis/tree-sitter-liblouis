@@ -109,6 +109,12 @@ module.exports = grammar({
 	    $.midendword,
 	    $.endword,
 	    $.partword,
+	    $.prepunc,
+	    $.postpunc,
+	    $.begnum,
+	    $.midnum,
+	    $.endnum,
+	    $.joinnum,
 
 	    // Computer braille
 	    $.begcomp,
@@ -219,6 +225,12 @@ module.exports = grammar({
 	midendword: $ => seq(optional($._prefix), repeat($.with_class), 'midendword', $._sp, $.chars, $._sp, $.dots_or_equal),
 	endword: $ => seq(optional($._prefix), repeat($.with_class), 'endword', $._sp, $.chars, $._sp, $.dots_with_zero_or_equal),
 	partword: $ => seq(optional($._prefix), repeat($.with_class), 'partword', $._sp, $.chars, $._sp, $.dots),
+	prepunc: $ => seq(optional($._prefix), 'prepunc', $._sp, $.chars, $._sp, $.dots),
+	postpunc: $ => seq(optional($._prefix), 'postpunc', $._sp, $.chars, $._sp, $.dots),
+	begnum: $ => seq(optional($._prefix), 'begnum', $._sp, $.chars, $._sp, $.dots_with_zero),
+	midnum: $ => seq(optional($._prefix), 'midnum', $._sp, $.chars, $._sp, $.dots_with_zero),
+	endnum: $ => seq(optional($._prefix), 'endnum', $._sp, $.chars, $._sp, $.dots_with_zero),
+	joinnum: $ => seq(optional($._prefix), 'joinnum', $._sp, $.chars, $._sp, $.dots),
 
 	begcomp: $ => seq(optional($._prefix), 'begcomp', $._sp, $.dots),
 	endcomp: $ => seq(optional($._prefix), 'endcomp', $._sp, $.dots),
