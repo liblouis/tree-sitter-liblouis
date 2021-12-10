@@ -90,7 +90,21 @@ digit 0 356 NAB computer braille
 
 (source_file
   (digit
-    (chars)
+    (number)
+    (dots))
+  (end_comment))
+
+==================
+digit with Arabic numeral
+==================
+
+digit \x0662 128 # 2 (٢)
+
+---
+
+(source_file
+  (digit
+    (number (hex_char))
     (dots))
   (end_comment))
 
