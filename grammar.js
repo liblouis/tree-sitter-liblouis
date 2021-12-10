@@ -32,6 +32,7 @@ module.exports = grammar({
 	    $.digit,
 	    $.grouping,
 	    $.letter,
+	    $.base,
 	    $.lowercase,
 	    $.uppercase,
 	    $.litdigit,
@@ -150,7 +151,8 @@ module.exports = grammar({
 	punctuation: $ => seq(optional($._prefix), 'punctuation', $._sp, $.chars, $._sp, $.dots_with_zero),
 	digit: $ => seq('digit', $._sp, $.chars, $._sp, $.dots),
 	grouping: $ => seq('grouping', $._sp, $.name, $._sp, $.chars, $._sp, $.dots, ',', $.dots),
-	letter: $ => seq('letter', $._sp, $.chars, $._sp, $.dots_with_zero_or_equal),
+	base: $ => seq('base', $._sp, $.name, $._sp, $.char, $._sp, $.char),
+	letter: $ => seq(optional($._prefix), 'letter', $._sp, $.chars, $._sp, $.dots_with_zero_or_equal),
 	lowercase: $ => seq(optional($._prefix), 'lowercase', $._sp, $.chars, $._sp, $.dots),
 	uppercase: $ => seq(optional($._prefix), 'uppercase', $._sp, $.chars, $._sp, $.dots),
 	litdigit: $ => seq('litdigit', $._sp, $.chars, $._sp, $.dots),
@@ -302,6 +304,8 @@ module.exports = grammar({
 	dots: $ => /[1-9a-f]+(-[1-9a-f]+)*/,
 
 	esc_seq: $ => choice('\\\\', '\\f', '\\n', '\\r', '\\s', '\\t', '\\v', '\\e'),
+	hex_char: $ => seq('\\x', /[0-9a-fA-F]{4}/),
+	char: $ => choice($.hex_char, /\p{L}/u),
 	chars: $ => choice($.esc_seq, /[^ \t\n]+/),
 	ascii_chars: $ => /[a-zA-Z][a-zA-Z0-9]*/,
 

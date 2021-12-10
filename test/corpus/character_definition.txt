@@ -195,3 +195,17 @@ math + 346 plus
     (dots_with_zero))
   (end_comment))
 
+==================
+base
+==================
+
+base uppercase A a
+
+---
+
+(source_file
+  (base
+    (name)
+    (char)
+    (char)))
+
