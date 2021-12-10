@@ -8,7 +8,7 @@ letter a 0
 
 (source_file
   (letter
-    (chars)
+    (char)
     (dots_with_zero)))
 
 ==================
@@ -21,7 +21,7 @@ letter a 123-0-12
 
 (source_file
   (letter
-    (chars)
+    (char)
     (dots_with_zero)))
 
 ==================
@@ -34,5 +34,5 @@ letter a =
 
 (source_file
   (letter
-    (chars)
+    (char)
     (equal)))

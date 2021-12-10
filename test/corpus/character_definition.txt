@@ -8,7 +8,7 @@ space _ 0
 
 (source_file
   (space
-    (chars)
+    (char)
     (dots_with_zero)))
 
 ==================
@@ -22,7 +22,7 @@ noback space _ 23-0-12
 (source_file
   (space
     (noback)
-    (chars)
+    (char)
     (dots_with_zero)))
 
 ==================
@@ -37,7 +37,7 @@ noback nocross space _ 23-0-12
   (space
     (noback)
     (nocross)
-    (chars)
+    (char)
     (dots_with_zero)))
 
 ==================
@@ -50,7 +50,7 @@ punctuation . 46
 
 (source_file
   (punctuation
-    (chars)
+    (char)
     (dots_with_zero)))
 
 ==================
@@ -63,7 +63,7 @@ punctuation . 46 dot pattern for period in NAB computer braille
 
 (source_file
   (punctuation
-    (chars)
+    (char)
     (dots_with_zero))
   (end_comment))
 
@@ -77,7 +77,7 @@ digit 0 356
 
 (source_file
   (digit
-    (chars)
+    (number)
     (dots)))
 
 ==================
@@ -134,7 +134,7 @@ lowercase a 1
 
 (source_file
   (lowercase
-    (chars)
+    (char)
     (dots)))
 
 ==================
@@ -147,7 +147,7 @@ uppercase A 1
 
 (source_file
   (uppercase
-    (chars)
+    (char)
     (dots)))
 
 ==================
@@ -177,7 +177,7 @@ sign % 4-25-1234 literary percent sign
 
 (source_file
   (sign
-    (chars)
+    (char)
     (dots_with_zero))
   (end_comment))
 
@@ -191,7 +191,7 @@ math + 346 plus
 
 (source_file
   (math
-    (chars)
+    (char)
     (dots_with_zero))
   (end_comment))
 
