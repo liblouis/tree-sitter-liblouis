@@ -186,8 +186,8 @@ module.exports = grammar({
 
 	class: $ => seq('class', $._sp, $.ascii_chars, $._sp, $.chars),
 	emphclass: $ => seq('emphclass', $._sp, $.ascii_chars),
-	begemph: $ => seq('begemph', $._sp, $.ascii_chars, $._sp, $.dots),
-	endemph: $ => seq('endemph', $._sp, $.ascii_chars, $._sp, $.dots),
+	begemph: $ => seq(optional($._prefix), 'begemph', $._sp, $.ascii_chars, $._sp, $.dots),
+	endemph: $ => seq(optional($._prefix), 'endemph', $._sp, $.ascii_chars, $._sp, $.dots),
 	noemphchars: $ => seq('noemphchars', $._sp, $.ascii_chars, $._sp, $.chars),
 	emphletter: $ => seq('emphletter', $._sp, $.ascii_chars, $._sp, $.dots),
 	begemphword: $ => seq('begemphword', $._sp, $.ascii_chars, $._sp, $.dots),
