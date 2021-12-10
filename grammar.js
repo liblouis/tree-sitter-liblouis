@@ -199,7 +199,7 @@ module.exports = grammar({
 	lenemphphrase: $ => seq('lenemphphrase', $._sp, $.ascii_chars, $._sp, $.ascii_digit),
 
 	decpoint: $ => seq('decpoint', $._sp, $.chars, $._sp, $.dots),
-	hyphen: $ => seq('hyphen', $._sp, $.chars, $._sp, $.dots), // FIXME: Does hyphen really need a nofor prefix?
+	hyphen: $ => seq(optional($._prefix), 'hyphen', $._sp, $.chars, $._sp, $.dots), // FIXME: Does hyphen really need a nofor prefix?
 	capsnocont: $ => 'capsnocont',
 
 	compbrl: $ => seq(optional($._prefix), 'compbrl', $._sp, $.chars),
