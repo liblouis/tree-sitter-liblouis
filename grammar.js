@@ -39,10 +39,6 @@ module.exports = grammar({
 	    $.math,
 
 	    // Braille Indicator Opcodes
-
-	    // Emphasis Opcodes
-
-	    // Braille Indicator Opcodes
 	    $.capsletter,
 	    $.begcapsword,
 	    $.endcapsword,
@@ -62,8 +58,30 @@ module.exports = grammar({
 	    $.numericmodechars,
 	    $.midendnumericmodechars,
 
+	    // Standing alone sequences
+	    $.seqdelimiter,
+	    $.seqbeforechars,
+	    $.seqafterchars,
+	    $.seqafterpattern,
+	    $.seqafterexpression,
+
+	    // Emphasis Opcodes
+	    $.class,
+	    $.emphclass,
+	    $.begemph,
+	    $.endemph,
+	    $.noemphchars,
+	    $.emphletter,
+	    $.begemphword,
+	    $.endemphword,
+	    $.emphmodechars,
+	    $.begemphphrase,
+	    $.endemphphrase,
+	    $.lenemphphrase,
+
+	    // Special Symbol Opcodes
 	    $.decpoint,
-	    $.hyphen, // FIXME: Does hyphen really need a nofor prefix?
+	    $.hyphen,
 
 	    // Special Processing Opcodes
 	    $.capsnocont,
@@ -152,8 +170,27 @@ module.exports = grammar({
 	numericmodechars: $ => seq('numericmodechars', $._sp, $.chars),
 	midendnumericmodechars: $ => seq('midendnumericmodechars', $._sp, $.chars),
 
+	seqdelimiter: $ => seq('seqdelimiter', $._sp, $.chars),
+	seqbeforechars: $ => seq('seqbeforechars', $._sp, $.chars),
+	seqafterchars: $ => seq('seqafterchars', $._sp, $.chars),
+	seqafterpattern: $ => seq('seqafterpattern', $._sp, $.chars),
+	seqafterexpression: $ => seq('seqafterexpression', $._sp, $.chars),
+
+	class: $ => seq('class', $._sp, $.ascii_chars, $._sp, $.chars),
+	emphclass: $ => seq('emphclass', $._sp, $.ascii_chars),
+	begemph: $ => seq('begemph', $._sp, $.ascii_chars, $._sp, $.dots),
+	endemph: $ => seq('endemph', $._sp, $.ascii_chars, $._sp, $.dots),
+	noemphchars: $ => seq('noemphchars', $._sp, $.ascii_chars, $._sp, $.chars),
+	emphletter: $ => seq('emphletter', $._sp, $.ascii_chars, $._sp, $.dots),
+	begemphword: $ => seq('begemphword', $._sp, $.ascii_chars, $._sp, $.dots),
+	endemphword: $ => seq('endemphword', $._sp, $.ascii_chars, $._sp, $.dots),
+	emphmodechars: $ => seq('emphmodechars', $._sp, $.ascii_chars, $._sp, $.chars),
+	begemphphrase: $ => seq('begemphphrase', $._sp, $.ascii_chars, $._sp, $.dots_with_zero),
+	endemphphrase: $ => seq('endemphphrase', $._sp, $.ascii_chars, $._sp, choice($.before, $.after), $._sp, $.dots_with_zero),
+	lenemphphrase: $ => seq('lenemphphrase', $._sp, $.ascii_chars, $._sp, $.ascii_digit),
+
 	decpoint: $ => seq('decpoint', $._sp, $.chars, $._sp, $.dots),
-	hyphen: $ => seq('hyphen', $._sp, $.chars, $._sp, $.dots),
+	hyphen: $ => seq('hyphen', $._sp, $.chars, $._sp, $.dots), // FIXME: Does hyphen really need a nofor prefix?
 	capsnocont: $ => 'capsnocont',
 
 	compbrl: $ => seq(optional($._prefix), 'compbrl', $._sp, $.chars),

@@ -1,0 +1,158 @@
+==================
+emphclass
+==================
+
+emphclass underline
+
+---
+
+(source_file
+  (emphclass
+    (ascii_chars)))
+
+==================
+begemph
+==================
+
+begemph italic 46
+
+---
+
+(source_file
+  (begemph
+    (ascii_chars)
+    (dots)))
+
+==================
+endemph
+==================
+
+endemph italic 46-36
+
+---
+
+(source_file
+  (endemph
+    (ascii_chars)
+    (dots)))
+
+==================
+noemphchars
+==================
+
+noemphchars italic \s'()
+
+---
+
+(source_file
+  (noemphchars
+    (ascii_chars)
+    (chars)))
+
+==================
+emphletter
+==================
+
+emphletter italic 46-25
+
+---
+
+(source_file
+  (emphletter
+    (ascii_chars)
+    (dots)))
+
+==================
+begemphword
+==================
+
+begemphword underline 456-36
+
+---
+
+(source_file
+  (begemphword
+    (ascii_chars)
+    (dots)))
+
+==================
+endemphword
+==================
+
+endemphword transnote 6-3
+
+---
+
+(source_file
+  (endemphword
+    (ascii_chars)
+    (dots)))
+
+==================
+emphmodechars
+==================
+
+emphmodechars underline -
+
+---
+
+(source_file
+  (emphmodechars
+    (ascii_chars)
+    (chars)))
+
+==================
+begemphphrase
+==================
+
+begemphphrase bold 456-46-46
+
+---
+
+(source_file
+  (begemphphrase
+    (ascii_chars)
+    (dots_with_zero)))
+
+==================
+endemphphrase before
+==================
+
+endemphphrase bold before 456-46
+
+---
+
+(source_file
+  (endemphphrase
+    (ascii_chars)
+    (before)
+    (dots_with_zero)))
+
+==================
+endemphphrase after
+==================
+
+endemphphrase underline after 6-3
+
+---
+
+(source_file
+  (endemphphrase
+    (ascii_chars)
+    (after)
+    (dots_with_zero)))
+
+==================
+lenemphphrase
+==================
+
+lenemphphrase underline 3
+
+---
+
+(source_file
+  (lenemphphrase
+    (ascii_chars)
+    (ascii_digit)))
+
+

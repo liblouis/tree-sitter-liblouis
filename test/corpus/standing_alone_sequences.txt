@@ -1,0 +1,60 @@
+==================
+seqdelimiter
+==================
+
+seqdelimiter -—
+
+---
+
+(source_file
+  (seqdelimiter
+    (chars)))
+
+==================
+seqbeforechars
+==================
+
+seqbeforechars ([{"“'‘
+
+---
+
+(source_file
+  (seqbeforechars
+    (chars)))
+
+==================
+seqafterchars
+==================
+
+seqafterchars  )]}"”'’.,;:.!?…
+
+---
+
+(source_file
+  (seqafterchars
+    (chars)))
+
+==================
+seqafterpattern
+==================
+
+seqafterpattern 'd
+
+---
+
+(source_file
+  (seqafterpattern
+    (chars)))
+
+==================
+seqafterexpression
+==================
+
+seqafterexpression '([DSTdst]|ll|[rv]e|LL|[RV]E)
+
+---
+
+(source_file
+  (seqafterexpression
+    (chars)))
+
