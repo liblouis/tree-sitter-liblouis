@@ -343,6 +343,18 @@ partword st 34
     (dots)))
 
 ==================
+exactdots
+==================
+
+exactdots @4-46-12356
+
+---
+
+(source_file
+  (exactdots
+    (dots)))
+
+==================
 prepunc
 ==================
 
