@@ -144,7 +144,7 @@ module.exports = grammar({
 
 	include: $ => seq('include', $._sp, $.filename),
 	undefined: $ => seq('undefined', $._sp, $.dots),
-	display: $ => seq('display', $._sp, $.chars, $._sp, $.dots),
+	display: $ => seq(optional($._prefix), 'display', $._sp, $.chars, $._sp, $.dots), // FIXME: does display really need a prefix?
 	multind: $ => seq(optional($._prefix), 'multind', $._sp, $.dots, $._sp, $.chars),
 
 	space: $ => seq(optional($._prefix), 'space', $._sp, $.char, $._sp, $.dots),
