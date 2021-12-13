@@ -37,7 +37,9 @@ module.exports = grammar({
 	    $.math,
 
 	    // Braille Indicator Opcodes
+	    $.modeletter,
 	    $.capsletter,
+	    $.begmodeword,
 	    $.begcapsword,
 	    $.endcapsword,
 	    $.capsmodechars,
@@ -157,7 +159,9 @@ module.exports = grammar({
 	sign: $ => seq(optional($._prefix), 'sign', $._sp, $.char, $._sp, $.dots),
 	math: $ => seq(optional($._prefix), 'math', $._sp, $.char, $._sp, $.dots),
 
+	modeletter: $ => seq(optional($._prefix), 'modeletter', $._sp, $.ascii_chars, $._sp, $.dots),
 	capsletter: $ => seq(optional($._prefix), 'capsletter', $._sp, $.dots),
+	begmodeword: $ => seq(optional($._prefix), 'begmodeword', $._sp, $.ascii_chars, $._sp, $.dots),
 	begcapsword: $ => seq(optional($._prefix), 'begcapsword', $._sp, $.dots),
 	endcapsword: $ => seq(optional($._prefix), 'endcapsword', $._sp, $.dots),
 	capsmodechars: $ => seq('capsmodechars', $._sp, $.chars),
