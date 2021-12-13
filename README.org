@@ -1,0 +1,82 @@
+#+title: Tree-sitter for liblouis tables
+#+date: <2021-12-13 Mo>
+#+author: Christian Egli
+#+language: en
+
+A [[https://tree-sitter.github.io/tree-sitter/][Tree-sitter parser]] for liblouis tables.
+
+This can either be used as a basis for a parser for the liblouis
+tables[fn:1] or it can serve as a way to support highlighting and
+syntax checks in any editor that supports tree-sitter[fn:2].
+
+* Build
+
+#+begin_src shell
+  npm install
+  export PATH=$PATH:./node_modules/.bin
+  tree-sitter generate
+#+end_src
+
+To run the test suite
+
+#+begin_src shell
+  tree-sitter test
+#+end_src
+
+* Usage
+
+#+begin_src shell
+  tree-sitter parse '/path/to/liblouis/tables/*' --quiet --stat
+#+end_src
+
+To get the syntax tree for a particular table
+
+#+begin_src shell
+  tree-sitter parse /path/to/liblouis/tables/nl-NL-g0.utb
+#+end_src
+
+You can even get an XML export of the syntax tree
+
+  #+begin_src shell
+  tree-sitter parse /path/to/liblouis/tables/nl-NL-g0.utb --xml
+#+end_src
+
+For more info consult the help with ~tree-sitter parse --help~.
+
+* Status
+
+As of this date the parser handles all liblouis tables except for
+~ja-kantenji.utb~ and ~ko-chars.cti~. There seems be a problem with
+some Hangul and Han characters.
+
+I had hoped this would be immediately applicable in a wide range of
+editors. But it appears that not that many support tree-sitter yet.
+Emacs has a [[https://github.com/emacs-tree-sitter/elisp-tree-sitter][tree-sitter package]]. But it still needs some manual
+tweaking to make it recognize the liblouis tree-sitter.
+
+* Todo
+
+- [ ] Add support for highlighting
+
+* License
+
+Copyright (C) 2021 Swiss Library for the Blind, Visually Impaired and Print Disabled
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see
+<https://www.gnu.org/licenses/>.
+
+* Footnotes
+[fn:1] Personally I prefer a Rust solution such as [[https://github.com/Geal/nom][nom]] or [[https://github.com/pest-parser/pest][pest]]
+
+[fn:2] [[https://atom.io/][Atom]], possibly [[https://neovim.io/][neovim]] and [[https://www.gnu.org/software/emacs/][Emacs]]
