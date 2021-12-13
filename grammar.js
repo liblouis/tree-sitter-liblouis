@@ -58,6 +58,10 @@ module.exports = grammar({
 	    $.numericmodechars,
 	    $.midendnumericmodechars,
 
+	    $.begmodephrase, // FIXME: undocumented
+	    $.endmodephrase, // FIXME: undocumented
+	    $.lenmodephrase, // FIXME: undocumented
+
 	    // Standing alone sequences
 	    $.seqdelimiter,
 	    $.seqbeforechars,
@@ -179,6 +183,10 @@ module.exports = grammar({
 	numericnocontchars: $ => seq('numericnocontchars', $._sp, $.chars),
 	numericmodechars: $ => seq('numericmodechars', $._sp, $.chars),
 	midendnumericmodechars: $ => seq('midendnumericmodechars', $._sp, $.chars),
+
+	begmodephrase: $ => seq('begmodephrase', $._sp, $.ascii_chars, $._sp, $.dots),
+	endmodephrase: $ => seq('endmodephrase', $._sp, $.ascii_chars, $._sp, choice($.before, $.after), $._sp, $.dots),
+	lenmodephrase: $ => seq('lenmodephrase', $._sp, $.ascii_chars, $._sp, $.ascii_digit),
 
 	seqdelimiter: $ => seq('seqdelimiter', $._sp, $.chars),
 	seqbeforechars: $ => seq('seqbeforechars', $._sp, $.chars),
