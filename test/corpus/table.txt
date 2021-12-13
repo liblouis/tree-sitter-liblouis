@@ -20,7 +20,7 @@ undefined 123
 
 (source_file
   (undefined
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 display rule
@@ -33,7 +33,7 @@ display a 1
 (source_file
   (display
     (chars)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 display rule 2
@@ -46,7 +46,7 @@ display a 123
 (source_file
   (display
     (chars)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 display rule 3
@@ -59,5 +59,5 @@ display a 123-0
 (source_file
   (display
     (chars)
-    (dots_with_zero)))
+    (dots)))
 

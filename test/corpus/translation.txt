@@ -70,7 +70,7 @@ always world 456-2456 unconditional translation
 (source_file
   (always
     (chars)
-    (dots_with_zero))
+    (dots))
   (end_comment))
 
 ==================
@@ -84,7 +84,7 @@ repeated --- 36-36-36 shorten separator lines made with hyphens
 (source_file
   (repeated
     (chars)
-    (dots_with_zero))
+    (dots))
   (end_comment))
 
 ==================
@@ -230,7 +230,7 @@ begword dino 145-35-135 dinoflagellate
 (source_file
   (begword
     (chars)
-    (dots_with_zero))
+    (dots))
   (end_comment))
 
 ==================
@@ -271,7 +271,7 @@ midword ea 2
 (source_file
   (midword
     (chars)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 midendword
@@ -313,7 +313,7 @@ endword in' 35-3
 (source_file
   (endword
     (chars)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 endword with equal
@@ -391,7 +391,7 @@ begnum $ 256-3456
 (source_file
   (begnum
     (chars)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 midnum
@@ -404,7 +404,7 @@ midnum - 36
 (source_file
   (midnum
     (chars)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 endnum
@@ -417,7 +417,7 @@ endnum nd 1345-145
 (source_file
   (endnum
     (chars)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 joinnum

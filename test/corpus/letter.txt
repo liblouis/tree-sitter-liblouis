@@ -9,7 +9,7 @@ letter a 0
 (source_file
   (letter
     (char)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 letter with dots with zero
@@ -22,7 +22,7 @@ letter a 123-0-12
 (source_file
   (letter
     (char)
-    (dots_with_zero)))
+    (dots)))
 
 ==================
 letter with =
