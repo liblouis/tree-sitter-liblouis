@@ -6,18 +6,15 @@ module.exports = grammar({
 	_line: $ => seq($._line1, $._newline),
 	_line1: $=> choice(
 	    $.comment,
-	    $._rule_with_comment,
-	    $._empty_line
+	    $._rule_with_comment
 	),
 	comment: $ => seq('#', $._not_newline),
 	end_comment: $ => seq($._sp, $._not_newline),
 	_not_newline: $ => /[^\n]*/,
-	_empty_line: $ => $._sp_maybe,
 
 	_rule_with_comment: $ => seq(
-	    $._sp_maybe,
 	    $._rule,
-	    choice($.end_comment, $._sp_maybe)
+	    optional($.end_comment)
 	),
 	_rule: $ => choice(
 	    // Miscellaneous Opcodes
@@ -310,11 +307,9 @@ module.exports = grammar({
 	filename: $ => /[-a-zA-Z0-9._\/]+/,
 	_newline: $ => choice('\n', '\r\n', '\r'),
 	_sp: $ => /[ \t]+/,
-	_sp_maybe: $ => /[ \t]*/,
 
 	ascii_digit: $ => /[0-9]/,
 	oct_digit: $ => /[0-7]/
    },
-    extras: $ => [],
     inline: $ => [$.dots_or_equal]
 });
