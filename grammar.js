@@ -223,11 +223,11 @@ module.exports = grammar({
 	sufword: $ => seq(optional($._prefix), repeat($.with_class), 'sufword', $._sp, $.chars, $._sp, $.dots_or_equal),
 	prfword: $ => seq(optional($._prefix), 'prfword', $._sp, $.chars, $._sp, $.dots_or_equal),
 	begword: $ => seq(optional($._prefix), repeat($.with_class), 'begword', $._sp, $.chars, $._sp, $.dots_or_equal),
-	begmidword: $ => seq(optional($._prefix), repeat($.with_class), 'begmidword', $._sp, $.chars, $._sp, $.dots),
+	begmidword: $ => seq(optional($._prefix), repeat($.with_class), 'begmidword', $._sp, $.chars, $._sp, $.dots_or_equal),
 	midword: $ => seq(optional($._prefix), repeat($.with_class), 'midword', $._sp, $.chars, $._sp, $.dots_or_equal),
 	midendword: $ => seq(optional($._prefix), repeat($.with_class), 'midendword', $._sp, $.chars, $._sp, $.dots_or_equal),
 	endword: $ => seq(optional($._prefix), repeat($.with_class), 'endword', $._sp, $.chars, $._sp, $.dots_or_equal),
-	partword: $ => seq(optional($._prefix), repeat($.with_class), 'partword', $._sp, $.chars, $._sp, $.dots),
+	partword: $ => seq(optional($._prefix), repeat($.with_class), 'partword', $._sp, $.chars, $._sp, $.dots_or_equal),
 	exactdots: $ => seq('exactdots', $._sp, '@', $.dots),
 	prepunc: $ => seq(optional($._prefix), 'prepunc', $._sp, $.chars, $._sp, $.dots),
 	postpunc: $ => seq(optional($._prefix), 'postpunc', $._sp, $.chars, $._sp, $.dots),
@@ -261,7 +261,7 @@ module.exports = grammar({
 	match: $ => seq(optional($._prefix),
 			repeat($.with_class),
 			optional($.with_match),
-			'match', $._sp, $.pre_pattern, $._sp, $.chars, $._sp, $.post_pattern, $._sp, $.dots),
+			'match', $._sp, $.pre_pattern, $._sp, $.chars, $._sp, $.post_pattern, $._sp, $.dots_or_equal),
 	with_match: $ => seq(
 	    choice(
 		'empmatchbefore',
