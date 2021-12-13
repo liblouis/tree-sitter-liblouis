@@ -302,7 +302,7 @@ module.exports = grammar({
 
 	esc_seq: $ => choice('\\\\', '\\f', '\\n', '\\r', '\\s', '\\t', '\\v', '\\e'),
 	hex_char: $ => seq('\\x', /[0-9a-fA-F]{4}/),
-	char: $ => choice($.esc_seq, $.hex_char, /(\p{L}|\p{N}|\p{P}|\p{M}|\p{S})/u),
+	char: $ => choice($.esc_seq, $.hex_char, /(\p{L}|\p{N}|\p{P}|\p{M}|\p{S}|­)/u),
 	number: $ => choice($.hex_char, /([0-9]|\p{N})/),
 	chars: $ => choice($.esc_seq, /[^ \t\n]+/),
 	ascii_chars: $ => /[a-zA-Z][a-zA-Z0-9]*/,
