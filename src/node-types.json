@@ -1,5 +1,459 @@
 [
   {
+    "type": "always",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attribute",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "oct_digit",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "base",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "char",
+          "named": true
+        },
+        {
+          "type": "name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begcaps",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begcapsphrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begcapsword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begcomp",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begemph",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begemphphrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begemphword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begmidword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begmodephrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begmodeword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begnum",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "begword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "capsletter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "capsmodechars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "char",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "esc_seq",
+          "named": true
+        },
+        {
+          "type": "hex_char",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "chars",
     "named": true,
     "fields": {},
@@ -15,9 +469,193 @@
     }
   },
   {
+    "type": "class",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "comment",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "comp6",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compbrl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "context",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "multipass_action",
+          "named": true
+        },
+        {
+          "type": "multipass_test",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "contraction",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "correct",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "multipass_action",
+          "named": true
+        },
+        {
+          "type": "multipass_test",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "decpoint",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "digit",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "display",
@@ -32,14 +670,41 @@
           "named": true
         },
         {
-          "type": "dots_with_zero",
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "dots_with_zero",
+    "type": "emphclass",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "emphletter",
     "named": true,
     "fields": {},
     "children": {
@@ -47,7 +712,30 @@
       "required": true,
       "types": [
         {
-          "type": "dot_with_zero",
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "emphmodechars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "chars",
           "named": true
         }
       ]
@@ -59,9 +747,353 @@
     "fields": {}
   },
   {
+    "type": "endcaps",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endcapsphrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "after",
+          "named": true
+        },
+        {
+          "type": "before",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endcapsword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endcomp",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endemph",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endemphphrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "after",
+          "named": true
+        },
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "before",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endemphword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endmodephrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "after",
+          "named": true
+        },
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "before",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endnum",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "endword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "esc_seq",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "exactdots",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "grouping",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "hex_char",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "hyphen",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "include",
@@ -79,7 +1111,7 @@
     }
   },
   {
-    "type": "letter",
+    "type": "joinnum",
     "named": true,
     "fields": {},
     "children": {
@@ -91,11 +1123,1148 @@
           "named": true
         },
         {
-          "type": "dots_with_zero",
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "joinword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "largesign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lencapsphrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_digit",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lenemphphrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "ascii_digit",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lenmodephrase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "ascii_digit",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "letsign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "letter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "char",
+          "named": true
+        },
+        {
+          "type": "dots",
           "named": true
         },
         {
           "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "litdigit",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "literal",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lowercase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "char",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lowword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "match",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "post_pattern",
+          "named": true
+        },
+        {
+          "type": "pre_pattern",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        },
+        {
+          "type": "with_match",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "math",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "char",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "midendnumericmodechars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "midendword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "midnum",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "midword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "modeletter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "multind",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "multipass_action",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "multipass_test",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "nocont",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "nocontractsign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "noemphchars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "noletsign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "noletsignafter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "noletsignbefore",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "number",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "hex_char",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "numericmodechars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "numericnocontchars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "numsign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "partword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pass2",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "multipass_action",
+          "named": true
+        },
+        {
+          "type": "multipass_test",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pass3",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "multipass_action",
+          "named": true
+        },
+        {
+          "type": "multipass_test",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pass4",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "multipass_action",
+          "named": true
+        },
+        {
+          "type": "multipass_test",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "post_pattern",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "postpunc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pre_pattern",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prepunc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "prfword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "punctuation",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "char",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "repeated",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "rependword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "replace",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "repword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seqafterchars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seqafterexpression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seqafterpattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seqbeforechars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seqdelimiter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "char",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
           "named": true
         }
       ]
@@ -110,7 +2279,111 @@
       "required": false,
       "types": [
         {
+          "type": "always",
+          "named": true
+        },
+        {
+          "type": "attribute",
+          "named": true
+        },
+        {
+          "type": "base",
+          "named": true
+        },
+        {
+          "type": "begcaps",
+          "named": true
+        },
+        {
+          "type": "begcapsphrase",
+          "named": true
+        },
+        {
+          "type": "begcapsword",
+          "named": true
+        },
+        {
+          "type": "begcomp",
+          "named": true
+        },
+        {
+          "type": "begemph",
+          "named": true
+        },
+        {
+          "type": "begemphphrase",
+          "named": true
+        },
+        {
+          "type": "begemphword",
+          "named": true
+        },
+        {
+          "type": "begmidword",
+          "named": true
+        },
+        {
+          "type": "begmodephrase",
+          "named": true
+        },
+        {
+          "type": "begmodeword",
+          "named": true
+        },
+        {
+          "type": "begnum",
+          "named": true
+        },
+        {
+          "type": "begword",
+          "named": true
+        },
+        {
+          "type": "capsletter",
+          "named": true
+        },
+        {
+          "type": "capsmodechars",
+          "named": true
+        },
+        {
+          "type": "capsnocont",
+          "named": true
+        },
+        {
+          "type": "class",
+          "named": true
+        },
+        {
           "type": "comment",
+          "named": true
+        },
+        {
+          "type": "comp6",
+          "named": true
+        },
+        {
+          "type": "compbrl",
+          "named": true
+        },
+        {
+          "type": "context",
+          "named": true
+        },
+        {
+          "type": "contraction",
+          "named": true
+        },
+        {
+          "type": "correct",
+          "named": true
+        },
+        {
+          "type": "decpoint",
+          "named": true
+        },
+        {
+          "type": "digit",
           "named": true
         },
         {
@@ -118,7 +2391,71 @@
           "named": true
         },
         {
+          "type": "emphclass",
+          "named": true
+        },
+        {
+          "type": "emphletter",
+          "named": true
+        },
+        {
+          "type": "emphmodechars",
+          "named": true
+        },
+        {
           "type": "end_comment",
+          "named": true
+        },
+        {
+          "type": "endcaps",
+          "named": true
+        },
+        {
+          "type": "endcapsphrase",
+          "named": true
+        },
+        {
+          "type": "endcapsword",
+          "named": true
+        },
+        {
+          "type": "endcomp",
+          "named": true
+        },
+        {
+          "type": "endemph",
+          "named": true
+        },
+        {
+          "type": "endemphphrase",
+          "named": true
+        },
+        {
+          "type": "endemphword",
+          "named": true
+        },
+        {
+          "type": "endmodephrase",
+          "named": true
+        },
+        {
+          "type": "endnum",
+          "named": true
+        },
+        {
+          "type": "endword",
+          "named": true
+        },
+        {
+          "type": "exactdots",
+          "named": true
+        },
+        {
+          "type": "grouping",
+          "named": true
+        },
+        {
+          "type": "hyphen",
           "named": true
         },
         {
@@ -126,11 +2463,381 @@
           "named": true
         },
         {
+          "type": "joinnum",
+          "named": true
+        },
+        {
+          "type": "joinword",
+          "named": true
+        },
+        {
+          "type": "largesign",
+          "named": true
+        },
+        {
+          "type": "lencapsphrase",
+          "named": true
+        },
+        {
+          "type": "lenemphphrase",
+          "named": true
+        },
+        {
+          "type": "lenmodephrase",
+          "named": true
+        },
+        {
+          "type": "letsign",
+          "named": true
+        },
+        {
           "type": "letter",
           "named": true
         },
         {
+          "type": "litdigit",
+          "named": true
+        },
+        {
+          "type": "literal",
+          "named": true
+        },
+        {
+          "type": "lowercase",
+          "named": true
+        },
+        {
+          "type": "lowword",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "math",
+          "named": true
+        },
+        {
+          "type": "midendnumericmodechars",
+          "named": true
+        },
+        {
+          "type": "midendword",
+          "named": true
+        },
+        {
+          "type": "midnum",
+          "named": true
+        },
+        {
+          "type": "midword",
+          "named": true
+        },
+        {
+          "type": "modeletter",
+          "named": true
+        },
+        {
+          "type": "multind",
+          "named": true
+        },
+        {
+          "type": "nocont",
+          "named": true
+        },
+        {
+          "type": "nocontractsign",
+          "named": true
+        },
+        {
+          "type": "noemphchars",
+          "named": true
+        },
+        {
+          "type": "noletsign",
+          "named": true
+        },
+        {
+          "type": "noletsignafter",
+          "named": true
+        },
+        {
+          "type": "noletsignbefore",
+          "named": true
+        },
+        {
+          "type": "numericmodechars",
+          "named": true
+        },
+        {
+          "type": "numericnocontchars",
+          "named": true
+        },
+        {
+          "type": "numsign",
+          "named": true
+        },
+        {
+          "type": "partword",
+          "named": true
+        },
+        {
+          "type": "pass2",
+          "named": true
+        },
+        {
+          "type": "pass3",
+          "named": true
+        },
+        {
+          "type": "pass4",
+          "named": true
+        },
+        {
+          "type": "postpunc",
+          "named": true
+        },
+        {
+          "type": "prepunc",
+          "named": true
+        },
+        {
+          "type": "prfword",
+          "named": true
+        },
+        {
+          "type": "punctuation",
+          "named": true
+        },
+        {
+          "type": "repeated",
+          "named": true
+        },
+        {
+          "type": "rependword",
+          "named": true
+        },
+        {
+          "type": "replace",
+          "named": true
+        },
+        {
+          "type": "repword",
+          "named": true
+        },
+        {
+          "type": "seqafterchars",
+          "named": true
+        },
+        {
+          "type": "seqafterexpression",
+          "named": true
+        },
+        {
+          "type": "seqafterpattern",
+          "named": true
+        },
+        {
+          "type": "seqbeforechars",
+          "named": true
+        },
+        {
+          "type": "seqdelimiter",
+          "named": true
+        },
+        {
+          "type": "sign",
+          "named": true
+        },
+        {
+          "type": "space",
+          "named": true
+        },
+        {
+          "type": "sufword",
+          "named": true
+        },
+        {
+          "type": "swapcc",
+          "named": true
+        },
+        {
+          "type": "swapcd",
+          "named": true
+        },
+        {
+          "type": "swapdd",
+          "named": true
+        },
+        {
+          "type": "syllable",
+          "named": true
+        },
+        {
           "type": "undefined",
+          "named": true
+        },
+        {
+          "type": "uppercase",
+          "named": true
+        },
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "space",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "char",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sufword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "swapcc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "chars",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "swapcd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "swapdd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "syllable",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
           "named": true
         }
       ]
@@ -145,7 +2852,105 @@
       "required": true,
       "types": [
         {
-          "type": "dots_with_zero",
+          "type": "dots",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "uppercase",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "char",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "with_class",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "after",
+          "named": true
+        },
+        {
+          "type": "ascii_chars",
+          "named": true
+        },
+        {
+          "type": "before",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "with_match",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "word",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chars",
+          "named": true
+        },
+        {
+          "type": "dots",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "noback",
+          "named": true
+        },
+        {
+          "type": "nocross",
+          "named": true
+        },
+        {
+          "type": "nofor",
+          "named": true
+        },
+        {
+          "type": "with_class",
           "named": true
         }
       ]
@@ -168,7 +2973,11 @@
     "named": false
   },
   {
-    "type": "-",
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "@",
     "named": false
   },
   {
@@ -204,23 +3013,247 @@
     "named": false
   },
   {
+    "type": "\\x",
+    "named": false
+  },
+  {
+    "type": "after",
+    "named": true
+  },
+  {
+    "type": "always",
+    "named": false
+  },
+  {
+    "type": "ascii_chars",
+    "named": true
+  },
+  {
+    "type": "ascii_digit",
+    "named": true
+  },
+  {
+    "type": "attribute",
+    "named": false
+  },
+  {
+    "type": "base",
+    "named": false
+  },
+  {
+    "type": "before",
+    "named": true
+  },
+  {
+    "type": "begcaps",
+    "named": false
+  },
+  {
+    "type": "begcapsphrase",
+    "named": false
+  },
+  {
+    "type": "begcapsword",
+    "named": false
+  },
+  {
+    "type": "begcomp",
+    "named": false
+  },
+  {
+    "type": "begemph",
+    "named": false
+  },
+  {
+    "type": "begemphphrase",
+    "named": false
+  },
+  {
+    "type": "begemphword",
+    "named": false
+  },
+  {
+    "type": "begmidword",
+    "named": false
+  },
+  {
+    "type": "begmodephrase",
+    "named": false
+  },
+  {
+    "type": "begmodeword",
+    "named": false
+  },
+  {
+    "type": "begnum",
+    "named": false
+  },
+  {
+    "type": "begword",
+    "named": false
+  },
+  {
+    "type": "capsletter",
+    "named": false
+  },
+  {
+    "type": "capsmodechars",
+    "named": false
+  },
+  {
+    "type": "capsnocont",
+    "named": true
+  },
+  {
+    "type": "class",
+    "named": false
+  },
+  {
+    "type": "comp6",
+    "named": false
+  },
+  {
+    "type": "compbrl",
+    "named": false
+  },
+  {
+    "type": "context",
+    "named": false
+  },
+  {
+    "type": "contraction",
+    "named": false
+  },
+  {
+    "type": "correct",
+    "named": false
+  },
+  {
+    "type": "decpoint",
+    "named": false
+  },
+  {
+    "type": "digit",
+    "named": false
+  },
+  {
     "type": "display",
     "named": false
   },
   {
-    "type": "dot_with_zero",
+    "type": "dots",
     "named": true
+  },
+  {
+    "type": "emphclass",
+    "named": false
+  },
+  {
+    "type": "emphletter",
+    "named": false
+  },
+  {
+    "type": "emphmodechars",
+    "named": false
+  },
+  {
+    "type": "empmatchafter",
+    "named": false
+  },
+  {
+    "type": "empmatchbefore",
+    "named": false
+  },
+  {
+    "type": "endcaps",
+    "named": false
+  },
+  {
+    "type": "endcapsphrase",
+    "named": false
+  },
+  {
+    "type": "endcapsword",
+    "named": false
+  },
+  {
+    "type": "endcomp",
+    "named": false
+  },
+  {
+    "type": "endemph",
+    "named": false
+  },
+  {
+    "type": "endemphphrase",
+    "named": false
+  },
+  {
+    "type": "endemphword",
+    "named": false
+  },
+  {
+    "type": "endmodephrase",
+    "named": false
+  },
+  {
+    "type": "endnum",
+    "named": false
+  },
+  {
+    "type": "endword",
+    "named": false
   },
   {
     "type": "equal",
     "named": true
   },
   {
+    "type": "exactdots",
+    "named": false
+  },
+  {
     "type": "filename",
     "named": true
   },
   {
+    "type": "grouping",
+    "named": false
+  },
+  {
+    "type": "hyphen",
+    "named": false
+  },
+  {
     "type": "include",
+    "named": false
+  },
+  {
+    "type": "joinnum",
+    "named": false
+  },
+  {
+    "type": "joinword",
+    "named": false
+  },
+  {
+    "type": "largesign",
+    "named": false
+  },
+  {
+    "type": "lencapsphrase",
+    "named": false
+  },
+  {
+    "type": "lenemphphrase",
+    "named": false
+  },
+  {
+    "type": "lenmodephrase",
+    "named": false
+  },
+  {
+    "type": "letsign",
     "named": false
   },
   {
@@ -228,7 +3261,215 @@
     "named": false
   },
   {
+    "type": "litdigit",
+    "named": false
+  },
+  {
+    "type": "literal",
+    "named": false
+  },
+  {
+    "type": "lowercase",
+    "named": false
+  },
+  {
+    "type": "lowword",
+    "named": false
+  },
+  {
+    "type": "match",
+    "named": false
+  },
+  {
+    "type": "math",
+    "named": false
+  },
+  {
+    "type": "midendnumericmodechars",
+    "named": false
+  },
+  {
+    "type": "midendword",
+    "named": false
+  },
+  {
+    "type": "midnum",
+    "named": false
+  },
+  {
+    "type": "midword",
+    "named": false
+  },
+  {
+    "type": "modeletter",
+    "named": false
+  },
+  {
+    "type": "multind",
+    "named": false
+  },
+  {
+    "type": "name",
+    "named": true
+  },
+  {
+    "type": "noback",
+    "named": true
+  },
+  {
+    "type": "nocont",
+    "named": false
+  },
+  {
+    "type": "nocontractsign",
+    "named": false
+  },
+  {
+    "type": "nocross",
+    "named": true
+  },
+  {
+    "type": "noemphchars",
+    "named": false
+  },
+  {
+    "type": "nofor",
+    "named": true
+  },
+  {
+    "type": "noletsign",
+    "named": false
+  },
+  {
+    "type": "noletsignafter",
+    "named": false
+  },
+  {
+    "type": "noletsignbefore",
+    "named": false
+  },
+  {
+    "type": "numericmodechars",
+    "named": false
+  },
+  {
+    "type": "numericnocontchars",
+    "named": false
+  },
+  {
+    "type": "numsign",
+    "named": false
+  },
+  {
+    "type": "oct_digit",
+    "named": true
+  },
+  {
+    "type": "partword",
+    "named": false
+  },
+  {
+    "type": "pass2",
+    "named": false
+  },
+  {
+    "type": "pass3",
+    "named": false
+  },
+  {
+    "type": "pass4",
+    "named": false
+  },
+  {
+    "type": "postpunc",
+    "named": false
+  },
+  {
+    "type": "prepunc",
+    "named": false
+  },
+  {
+    "type": "prfword",
+    "named": false
+  },
+  {
+    "type": "punctuation",
+    "named": false
+  },
+  {
+    "type": "repeated",
+    "named": false
+  },
+  {
+    "type": "rependword",
+    "named": false
+  },
+  {
+    "type": "replace",
+    "named": false
+  },
+  {
+    "type": "repword",
+    "named": false
+  },
+  {
+    "type": "seqafterchars",
+    "named": false
+  },
+  {
+    "type": "seqafterexpression",
+    "named": false
+  },
+  {
+    "type": "seqafterpattern",
+    "named": false
+  },
+  {
+    "type": "seqbeforechars",
+    "named": false
+  },
+  {
+    "type": "seqdelimiter",
+    "named": false
+  },
+  {
+    "type": "sign",
+    "named": false
+  },
+  {
+    "type": "space",
+    "named": false
+  },
+  {
+    "type": "sufword",
+    "named": false
+  },
+  {
+    "type": "swapcc",
+    "named": false
+  },
+  {
+    "type": "swapcd",
+    "named": false
+  },
+  {
+    "type": "swapdd",
+    "named": false
+  },
+  {
+    "type": "syllable",
+    "named": false
+  },
+  {
     "type": "undefined",
+    "named": false
+  },
+  {
+    "type": "uppercase",
+    "named": false
+  },
+  {
+    "type": "word",
     "named": false
   }
 ]
