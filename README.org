@@ -5,9 +5,13 @@
 
 A [[https://tree-sitter.github.io/tree-sitter/][Tree-sitter parser]] for liblouis tables.
 
-This can either be used as a basis for a parser for the liblouis
-tables[fn:1] or it can serve as a way to support highlighting and
-syntax checks in any editor that supports tree-sitter[fn:2].
+This can serve as a way to support structural editing, syntax checks
+and highlighting for [[https://github.com/liblouis/liblouis][liblouis]] braille tables in any editor that
+supports tree-sitter (currently [[https://atom.io/][Atom]], possibly [[https://neovim.io/][neovim]] and [[https://www.gnu.org/software/emacs/][Emacs]]).
+
+It can also be used as a basis for a parser for the liblouis tables
+although personally I would prefer a Rust native solution such as [[https://github.com/Geal/nom][nom]]
+or [[https://github.com/pest-parser/pest][pest]].
 
 * Build
 
@@ -93,8 +97,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see
 <https://www.gnu.org/licenses/>.
-
-* Footnotes
-[fn:1] Personally I prefer a Rust solution such as [[https://github.com/Geal/nom][nom]] or [[https://github.com/pest-parser/pest][pest]]
-
-[fn:2] [[https://atom.io/][Atom]], possibly [[https://neovim.io/][neovim]] and [[https://www.gnu.org/software/emacs/][Emacs]]
