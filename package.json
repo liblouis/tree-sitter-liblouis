@@ -17,5 +17,19 @@
   },
   "devDependencies": {
     "tree-sitter-cli": "^0.20.1"
-  }
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.liblouis",
+      "file-types": [
+        "cti",
+        "uti",
+        "ctb",
+        "utb",
+        "tbl",
+	"dis"
+      ],
+      "first-line-regex": "# liblouis: "
+    }
+  ]
 }
