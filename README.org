@@ -80,6 +80,12 @@ editors. But it appears that not that many support tree-sitter yet.
 Emacs has a [[https://github.com/emacs-tree-sitter/elisp-tree-sitter][tree-sitter package]]. But it still needs some manual
 tweaking to make it recognize the liblouis tree-sitter.
 
+* Acknowledgements
+
+The grammar is pretty much just a port of the [[https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form][EBNF grammar]] in
+[[https://github.com/liblouis/rewrite-louis][rewrite-louis]], which in turn is a just port of the [[https://en.wikipedia.org/wiki/Parsing_expression_grammar][Parsing expression
+grammar]] from [[https://github.com/liblouis/louis-parser][louis-parser]].
+
 * License
 
 Copyright (C) 2021 Swiss Library for the Blind, Visually Impaired and Print Disabled
