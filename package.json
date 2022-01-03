@@ -8,7 +8,8 @@
   },
   "keywords": [
     "liblouis",
-    "braille"
+    "braille",
+    "parser"
   ],
   "author": "Christian Egli",
   "license": "ISC",
