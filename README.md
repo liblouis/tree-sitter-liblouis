@@ -1,3 +1,5 @@
+# Tree-sitter for liblouis tables
+
 A [Tree-sitter parser][] for liblouis tables.
 
 This can serve as a way to support structural editing, syntax checks
@@ -17,8 +19,7 @@ although personally I would prefer a Rust native solution such as
 [nom]: https://github.com/Geal/nom
 [pest]: https://github.com/pest-parser/pest
 
-Build
-=====
+# Build
 
 ``` console
 npm install
@@ -32,11 +33,9 @@ To run the test suite
 tree-sitter test
 ```
 
-Usage
-=====
+# Usage
 
-Parsing
--------
+## Parsing
 
 ``` console
 tree-sitter parse '/path/to/liblouis/tables/*' --quiet --stat
@@ -56,8 +55,7 @@ tree-sitter parse /path/to/liblouis/tables/nl-NL-g0.utb --xml
 
 For more info consult the help with `tree-sitter parse --help`.
 
-Highlighting
-------------
+## Highlighting
 
 You can use tree-sitter to highlight the source code of a liblouis
 table. You need to set up your [per-user configuration][] for this to
@@ -81,8 +79,7 @@ generated [da-dk-g28.html][].
 [standard theme]: https://tree-sitter.github.io/tree-sitter/syntax-highlighting#theme
 [da-dk-g28.html]: examples/da-dk-g28.html
 
-Status
-======
+# Status
 
 As of this date the parser handles all liblouis tables except for
 `ja-kantenji.utb` and `ko-chars.cti`. There seems be a problem with
@@ -95,8 +92,7 @@ tweaking to make it recognize the liblouis tree-sitter.
 
 [tree-sitter package]: https://github.com/emacs-tree-sitter/elisp-tree-sitter
 
-Acknowledgements
-================
+# Acknowledgements
 
 The grammar is pretty much just a port of the [EBNF grammar][] in
 [rewrite-louis][], which in turn is a just port of the [Parsing
@@ -107,8 +103,7 @@ expression grammar][] from [louis-parser][].
 [Parsing expression grammar]: https://en.wikipedia.org/wiki/Parsing_expression_grammar
 [louis-parser]: https://github.com/liblouis/louis-parser
 
-License
-=======
+# License
 
 Copyright (C) 2021 Swiss Library for the Blind, Visually Impaired and
 Print Disabled
