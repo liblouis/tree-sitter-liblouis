@@ -19,6 +19,12 @@ although personally I would prefer a Rust native solution such as
 [nom]: https://github.com/Geal/nom
 [pest]: https://github.com/pest-parser/pest
 
+# Install
+
+``` console
+npm install tree-sitter-liblouis
+```
+
 # Build
 
 ``` console
