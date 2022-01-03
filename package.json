@@ -27,7 +27,7 @@
         "ctb",
         "utb",
         "tbl",
-	"dis"
+        "dis"
       ],
       "first-line-regex": "# liblouis: "
     }
