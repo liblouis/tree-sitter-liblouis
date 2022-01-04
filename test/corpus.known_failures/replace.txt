@@ -1,0 +1,23 @@
+==================
+replace
+==================
+
+replace blisful blissful
+---
+
+(source_file
+  (replace
+    (chars)
+    (chars)))
+
+==================
+replace with one operand
+==================
+
+replace ~
+---
+
+(source_file
+  (replace
+   (chars)))
+
