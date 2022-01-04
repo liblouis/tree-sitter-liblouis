@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-liblouis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tree sitter for liblouis braille tables",
   "main": "bindings/node",
   "scripts": {
